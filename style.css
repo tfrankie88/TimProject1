@@ -1,0 +1,294 @@
+body {
+  /*background-color: tomato;*/
+  background-color: #C370E5;
+  text-align: center;
+  font-family: helvetica;
+  margin: 0;
+}
+
+h1 {
+  /*background-color: #45C37E;*/
+  font-size: 60px;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  z-index: 5;
+  /*border-bottom: 4px #318A59 solid;*/
+}
+
+h3 {
+  color: #C370E5;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 5px;
+  width: 150px;
+  margin: 15px auto 0;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+.wrongLetter {
+  color: rgba(255, 255, 255, .5);
+  font-size: 18px;
+  z-index: 3;
+}
+/*gives boxes to every element to see its realtion space*/
+/*.check {
+  border: 1px solid black;
+}*/
+
+/*Elements are contained in Box*/
+.box1 {
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+}
+
+
+
+/****
+Input and Instructions
+****/
+
+.queryField {
+  flex: 1;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+}
+
+.word {
+  flex: 1;
+  margin: auto;
+  color: white;
+  font-size: 24px;
+  margin: 0 auto 35px auto;
+  z-index: 6;
+}
+
+input {
+  flex: 1;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, .25);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  z-index: 6;
+}
+
+input[type="text"] {
+font-size: 40px;
+width: 50px;
+font-family: 'Quicksand', sans-serif;
+/*height: 10px;*/
+text-align: center;
+z-index: 6;
+
+}
+
+.butSubmit {
+  flex: 1;
+  line-height: 88px;
+  margin: auto;
+  z-index: 6;
+}
+
+#submit-letter {
+  flex: 1;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  border: none;
+  background-color: #45C37E;
+  width: 100px;
+  height: 50px;
+  border-radius: 3px;
+  border-bottom: 3px #318A59 solid;
+  z-index: 6;
+  /*line-height: 88px;*/
+}
+
+.instructions {
+  flex: 1;
+  margin: auto;
+  max-width: 300px;
+  max-height: 110px;
+  color: white;
+  overflow: scroll;
+  text-align: left;
+  background-color: rgba(255, 255, 255, .25);
+  border-radius: 5px;
+  padding: 10px 10px 10px 20px;
+  z-index: 6;
+}
+
+/* from csstricks.com*/
+/*::-webkit-scrollbar {
+    width: 10px;*/
+}
+
+ul {
+  list-style: none;
+  z-index: 6;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  display: inline;
+  padding: 10px;
+  z-index: 6;
+  /*border-bottom: 1px solid black;*/
+}
+
+/*****
+ Hangman Image Display Arena
+ *****/
+
+.hangmanDisplay {
+  flex:1;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 302px;
+  height: 403px;
+}
+
+.bully {
+  flex: 1;
+  margin: auto;
+  position: absolute;
+  background-image: url(bully.svg);
+  background-repeat:no-repeat;
+  background-size: contian;
+  width: 300px;
+  height: 401px;
+}
+
+.lilGuy {
+  flex: 1;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  background-image: url(lilGuy.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+  z-index: 0;
+  width: 300px;
+  height: 401px;
+}
+
+
+/***
+Limbs
+***/
+
+.limb {
+  flex: 1;
+  z-index: 2;
+}
+
+.pOne {
+  background-color: #C370E5;
+  width: 46px;
+  height: 89px;
+  position: absolute;
+  left: 44px;
+  top: 57px;
+}
+
+.pTwo {
+  background-color: #C370E5;
+  width: 46px;
+  height: 130px;
+  position: absolute;
+  left: 90px;
+  top: 11px;
+}
+
+.pThree {
+  background-color: #C370E5;
+  width: 85px;
+  height: 65px;
+  position: absolute;
+  left: 50px;
+  top: 141px;
+}
+
+.pFour {
+  background-color: #C370E5;
+  width: 51px;
+  height: 152px;
+  position: absolute;
+  left: 15px;
+  top: 197px;
+}
+
+.pFive {
+  background-color: #C370E5;
+  width: 50px;
+  height: 152px;
+  position: absolute;
+  left: 116px;
+  top: 197px;
+}
+
+.pSix {
+  background-color: #C370E5;
+  width: 55px;
+  height: 152px;
+  position: absolute;
+  left: 63px;
+  top: 197px;
+}
+
+/****
+Responsive for mobile
+*****/
+
+@media(max-width: 600px) {
+
+.box1 {
+  display: block;
+}
+
+#submit-letter {
+  width: 75px;
+  height: 50px;
+  flex: 1;
+}
+
+input {
+  flex: 1;
+  display: inline-flex;
+}
+
+.queryField {
+  display: inline;
+  z-index: 6;
+  /*flex: none;*/
+}
+
+.instructions{
+  display: block;
+  /*flex:none;*/
+}
+
+.hangmanDisplay{
+  z-index: -1;
+  position: relative;
+  left: -62px;
+  top: -439px;
+}
+
+.bully {
+  display: none;
+}
+}
