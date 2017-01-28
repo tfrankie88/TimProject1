@@ -255,6 +255,10 @@ Responsive for mobile
 
 @media(max-width: 600px) {
 
+@-ms-viewport{
+  width: device-width;
+}
+
 .box1 {
   display: block;
 }
