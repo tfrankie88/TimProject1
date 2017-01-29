@@ -164,10 +164,10 @@ li {
 .bully {
   flex: 1;
   margin: auto;
-  position: absolute;
+  position: relative;
   background-image: url(bully.svg);
   background-repeat:no-repeat;
-  background-size: contian;
+  background-size: contain;
   width: 300px;
   height: 401px;
 }
@@ -255,9 +255,9 @@ Responsive for mobile
 
 @media(max-width: 500px) {
 
-@-ms-viewport{
+/*@-ms-viewport{
   width: device-width;
-}
+}*/
 
 .box1 {
   display: block;
@@ -288,8 +288,12 @@ input {
 .hangmanDisplay{
   z-index: -1;
   position: fixed;
-  left: -25px;
+  left: 0px;
   top: 125px;
+}
+
+.lilGuy {
+  position: relative;
 }
 
 .bully {
