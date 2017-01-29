@@ -22,6 +22,7 @@ var $wordZ = [
   var $randoNum    = Math.floor(Math.random()*($wordZ.length));
   var $wordSelect  = $wordZ[$randoNum];
   var $splitWord   = $wordSelect.split('');
+  var $count       = 0;
 
 // As explained by Bobby; after splitting array item word, it is reassigned to a li item and the letter is hidden but the data is kept
   $splitWord.forEach(function(letter) {
@@ -40,12 +41,13 @@ $('input').on('keypress', function(event) {
     var $notFound = true;
     for (var i = 0; i < $splitWord.length; i++) {
       var $rightItem = $('.word li').eq(i);
-      if ($letterInput.val() === $rightItem.attr('data-letter')) {
+      if ($letterInput.val().toLowerCase() === $rightItem.attr('data-letter')) {
 // console.log('Add correct letter')
 // If letter matches data in li item attach input value to li
         $rightItem.text($rightItem.attr('data-letter'));
-        $rightItem.css('border-bottom', '');
+        var $winnerz = $rightItem.css('border-bottom', '');
 // Show every instance of letter...Thanks Bobby
+        $count += 1;
         $notFound = false;
       };
     };
@@ -59,21 +61,30 @@ $('input').on('keypress', function(event) {
     };
 // Clear input field
     $letterInput.val('');
+// Declare winner or loser
+    var winner = function () {
+      if ($count === $('li').length) {
+        alert('You Win!');
+      };
+    };
     loser();
+    winner();
   };
 });
 
 // On click event instead of keypress
   $addLetter.on('click', function() {
 // Filter through split array item to see if input matches any of the letters
+    var $count = 0;
     var $notFound = true;
     for (var i = 0; i < $splitWord.length; i++) {
       var $rightItem = $('.word li').eq(i);
-      if ($letterInput.val() === $rightItem.attr('data-letter')) {
+      if ($letterInput.val().toLowerCase() === $rightItem.attr('data-letter')) {
         console.log('Add correct letter')
         $rightItem.text($rightItem.attr('data-letter'));
         $rightItem.css('border-bottom', '');
 // Clear input field
+        $count += 1;
         $notFound = false;
       };
     };
@@ -84,16 +95,16 @@ $('input').on('keypress', function(event) {
       $('.wrongLetter').text(letterInputVal + wrongLetterText);
     };
     $letterInput.val('');
+    var winner = function () {
+      if ($count === $('li').length) {
+        alert('You Win!');
+      };
+    };
+    winner();
     loser();
   });
 
   var loser = function () {
-    if ($('.lilGuy div').length === 0) {
-      alert('Sorry Dweeb, Game Over');
-    };
-  };
-
-  var winner = function () {
     if ($('.lilGuy div').length === 0) {
       alert('Sorry Dweeb, Game Over');
     };

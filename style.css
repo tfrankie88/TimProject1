@@ -164,7 +164,7 @@ li {
 .bully {
   flex: 1;
   margin: auto;
-  position: relative;
+  position: absolute;
   background-image: url(bully.svg);
   background-repeat:no-repeat;
   background-size: contain;
@@ -293,7 +293,7 @@ input {
 }
 
 .lilGuy {
-  position: relative;
+  position: relative
 }
 
 .bully {
