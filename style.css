@@ -1,6 +1,6 @@
 body {
   /*background-color: tomato;*/
-  background-color: #C370E5;
+  background-color: #312736;
   text-align: center;
   font-family: helvetica;
   margin: 0;
@@ -20,7 +20,7 @@ h1 {
 }
 
 h3 {
-  color: #C370E5;
+  color: #312736;
   background-color: rgba(255, 255, 255, .5);
   padding: 5px;
   width: 150px;
@@ -196,7 +196,7 @@ Limbs
 }
 
 .pOne {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 46px;
   height: 89px;
   position: absolute;
@@ -205,7 +205,7 @@ Limbs
 }
 
 .pTwo {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 46px;
   height: 130px;
   position: absolute;
@@ -214,7 +214,7 @@ Limbs
 }
 
 .pThree {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 85px;
   height: 65px;
   position: absolute;
@@ -223,7 +223,7 @@ Limbs
 }
 
 .pFour {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 51px;
   height: 152px;
   position: absolute;
@@ -232,7 +232,7 @@ Limbs
 }
 
 .pFive {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 50px;
   height: 152px;
   position: absolute;
@@ -241,7 +241,7 @@ Limbs
 }
 
 .pSix {
-  background-color: #C370E5;
+  background-color: #312736;
   width: 55px;
   height: 152px;
   position: absolute;
@@ -253,7 +253,7 @@ Limbs
 Responsive for mobile
 *****/
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
 
 @-ms-viewport{
   width: device-width;
@@ -261,6 +261,7 @@ Responsive for mobile
 
 .box1 {
   display: block;
+  width: 100%;
 }
 
 #submit-letter {
@@ -287,9 +288,9 @@ input {
 
 .hangmanDisplay{
   z-index: -1;
-  position: relative;
-  left: -62px;
-  top: -439px;
+  position: absolute;
+  left: -25px;
+  top: 125px;
 }
 
 .bully {
