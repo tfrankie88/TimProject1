@@ -261,7 +261,6 @@ Responsive for mobile
 
 .box1 {
   display: block;
-  width: 100%;
 }
 
 #submit-letter {
@@ -288,7 +287,7 @@ input {
 
 .hangmanDisplay{
   z-index: -1;
-  position: absolute;
+  position: fixed;
   left: -25px;
   top: 125px;
 }
