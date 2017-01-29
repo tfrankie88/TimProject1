@@ -64,7 +64,7 @@ $('input').on('keypress', function(event) {
 // Declare winner or loser
     var winner = function () {
       if ($count === $('li').length) {
-        alert('You Win!');
+        alert('Congrats! You win. Refresh page, and play again!');
       };
     };
     loser();
@@ -97,7 +97,7 @@ $('input').on('keypress', function(event) {
     $letterInput.val('');
     var winner = function () {
       if ($count === $('li').length) {
-        alert('You Win!');
+        alert('Congrats! You win. Refresh page, and play again!');
       };
     };
     winner();
