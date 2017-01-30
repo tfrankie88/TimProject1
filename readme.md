@@ -37,7 +37,7 @@ is a feature-rich JavaScript library which simplifies complex JavaScript functio
 - As a user I should be able to view and play the game with ease on both a browser and mobile without having to zoom in to view anything.
 
 4.) **Wireframe**<br>
-<img src="img/timwireframe.png" alt="WireFrame" style="width:300px;height:300px;">
+![wireframe]
 
 5.) **How To Use**
 
@@ -57,3 +57,4 @@ I was very proud of what I was able to accomplish in 5 days. That said there are
 [jQuery]:https:jquery.com/
 [Google Chrome]:https://developers.google.com/web/tools/
 [Apple Safari]:https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html
+[wireframe]:http://imgur.com/a/h7dci
