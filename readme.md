@@ -21,7 +21,7 @@ is a feature-rich JavaScript library which simplifies complex JavaScript functio
 2.) **Approach Taken**
 
 - Before I even began writing any code, the first thing I did was planned out the wireframe and logic needed for my game. Through writing the pseudocode, I learned that there was **5 logic problems**.
-1.Create an array with various words as each item<br>2. Once the page populates, select an item from that array and split up that item into individual parts.<br>3. Check to see if the users input matched any of the split populated item.<br>4. If the item did not match, remove a div element labeled *limb* which was covering the hangman image in a sequential order.<br>5. Create a winning and losing state if the user corrected the right word or made 6 wrong guesses.
+> 1.Create an array with various words as each item<br>2. Once the page populates, select an item from that array and split up that item into individual parts.<br>3. Check to see if the users input matched any of the split populated item.<br>4. If the item did not match, remove a div element labeled *limb* which was covering the hangman image in a sequential order.<br>5. Create a winning and losing state if the user corrected the right word or made 6 wrong guesses.
 - Once I was done with the wireframe and pseudocode, I coded out the HTML of the site and organized the sites layout with very basic CSS. I attached a class named *check* which placed a 1px border on all elements in order to see how  interacted with one another in the box model.
 - I then jumped into the app.js file and began using the jQuery library to implement DOM manipulation and logic into the site. I placed the pseudocode into the app.js file and used it as a guide to work out the syntax which would implement the actual jQuery(JavaScript) code to achieve these commands. This was no easy task and required many hours of banging my head against a wall and asking for a great deal of advice and suggestions from both my cohort peers and instructors. ***Thank you all who helped***.<br>
 - Once the logic was stable I jumped back into the CSS and placed the skin on the site, and worked between the css file and chrome inspector to see how the site looked on both a desktop and mobile device.
@@ -37,7 +37,7 @@ is a feature-rich JavaScript library which simplifies complex JavaScript functio
 - As a user I should be able to view and play the game with ease on both a browser and mobile without having to zoom in to view anything.
 
 4.) **Wireframe**<br>
-<img src="img/timwireframe.png" alt="Mountain View" style="width:300px;height:300px;">
+<img src="img/timwireframe.png" alt="WireFrame" style="width:300px;height:300px;">
 
 5.) **How To Use**
 
