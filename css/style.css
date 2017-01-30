@@ -299,4 +299,58 @@ input {
 .bully {
   display: none;
 }
+
+.pOne {
+  background-color: #312736;
+  width: 100px;
+  height: 89px;
+  position: absolute;
+  left: 6px;
+  top: 44px;
+}
+
+.pTwo {
+  background-color: #312736;
+  width: 100px;
+  height: 134px;
+  position: absolute;
+  left: 106px;
+  top: -1px;
+}
+
+.pThree {
+  background-color: #312736;
+  width: 110px;
+  height: 44px;
+  position: absolute;
+  left: 48px;
+  top: 133px;
+}
+
+.pFour {
+  background-color: #312736;
+  width: 81px;
+  height: 152px;
+  position: absolute;
+  left: -2px;
+  top: 173px;
+}
+
+.pFive {
+  background-color: #312736;
+  width: 50px;
+  height: 152px;
+  position: absolute;
+  left: 137px;
+  top: 175px;
+}
+
+.Six {
+  background-color: #312736;
+  width: 72px;
+  height: 100px;
+  position: absolute;
+  left: 75px;
+  top: 177px;
+}
 }
