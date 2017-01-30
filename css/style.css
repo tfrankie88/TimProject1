@@ -165,7 +165,7 @@ li {
   flex: 1;
   margin: auto;
   position: absolute;
-  background-image: url(img/bully.svg);
+  background-image: url(img/bully-01.svg);
   background-repeat:no-repeat;
   background-size: contain;
   width: 300px;
@@ -177,7 +177,7 @@ li {
   display: flex;
   margin: auto;
   position: absolute;
-  background-image: url(img/lilGuy.svg);
+  background-image: url(img/lilGuy-01.svg);
   background-repeat:no-repeat;
   background-size: contain;
   z-index: 0;
