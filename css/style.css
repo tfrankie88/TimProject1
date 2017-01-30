@@ -165,11 +165,11 @@ li {
   flex: 1;
   margin: auto;
   position: absolute;
-  background-image: url(/img/bully.svg);
+  background-image: url(../img/bully-01.svg);
   background-repeat:no-repeat;
   background-size: contain;
-  width: 300px;
-  height: 401px;
+  width: 400px;
+  height: 400px;
 }
 
 .lilGuy {
@@ -177,12 +177,12 @@ li {
   display: flex;
   margin: auto;
   position: absolute;
-  background-image: url(/img/lilGuy.svg);
+  background-image: url(../img/lilGuy-01.svg);
   background-repeat:no-repeat;
   background-size: contain;
   z-index: 0;
-  width: 300px;
-  height: 401px;
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -197,20 +197,20 @@ Limbs
 
 .pOne {
   background-color: #312736;
-  width: 46px;
-  height: 89px;
+  width: 59px;
+  height: 116px;
   position: absolute;
-  left: 44px;
-  top: 57px;
+  left: 77px;
+  top: 60px;
 }
 
 .pTwo {
   background-color: #312736;
   width: 46px;
-  height: 130px;
+  height: 178px;
   position: absolute;
-  left: 90px;
-  top: 11px;
+  left: 133px;
+  top: -1px;
 }
 
 .pThree {
@@ -218,8 +218,8 @@ Limbs
   width: 85px;
   height: 65px;
   position: absolute;
-  left: 50px;
-  top: 141px;
+  left: 103px;
+  top: 175px;
 }
 
 .pFour {
@@ -227,7 +227,7 @@ Limbs
   width: 51px;
   height: 152px;
   position: absolute;
-  left: 15px;
+  left: 52px;
   top: 197px;
 }
 
@@ -236,17 +236,17 @@ Limbs
   width: 50px;
   height: 152px;
   position: absolute;
-  left: 116px;
+  left: 172px;
   top: 197px;
 }
 
 .pSix {
   background-color: #312736;
-  width: 55px;
-  height: 152px;
+  width: 72px;
+  height: 100px;
   position: absolute;
-  left: 63px;
-  top: 197px;
+  left: 102px;
+  top: 240px;
 }
 
 /****
