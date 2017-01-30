@@ -22,7 +22,6 @@ var $wordZ = [
   var $randoNum    = Math.floor(Math.random()*($wordZ.length));
   var $wordSelect  = $wordZ[$randoNum];
   var $splitWord   = $wordSelect.split('');
-// Set counter for winner or loser
   var $count       = 0;
 
 // As explained by Bobby; after splitting array item word, it is reassigned to a li item and the letter is hidden but the data is kept
@@ -42,13 +41,14 @@ $('input').on('keypress', function(event) {
     var $notFound = true;
     for (var i = 0; i < $splitWord.length; i++) {
       var $rightItem = $('.word li').eq(i);
-// If input letter matches a letter in split array word item...
       if ($letterInput.val().toLowerCase() === $rightItem.attr('data-letter')) {
+// console.log('Add correct letter')
 // If letter matches data in li item attach input value to li
         $rightItem.text($rightItem.attr('data-letter'));
         $rightItem.css('border-bottom', '');
-// Show every instance of letter...Thanks Bobby
+//Set Counter for winner
         $count += 1;
+// Show every instance of letter...Thanks Bobby
         $notFound = false;
       };
     };
