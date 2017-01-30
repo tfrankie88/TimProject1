@@ -57,4 +57,4 @@ I was very proud of what I was able to accomplish in 5 days. That said there are
 [jQuery]:https:jquery.com/
 [Google Chrome]:https://developers.google.com/web/tools/
 [Apple Safari]:https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html
-[wireframe]:http://imgur.com/nWIvx43
+[wireframe]:http://i.imgur.com/nWIvx43.png
