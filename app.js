@@ -88,7 +88,7 @@ $(document).ready(function(){
 
 // Event listner for click that does the same as above
   $addLetter.on('click', function() {
-// Filter through split array item to see if input matches any of the letters
+  // Filter through split array item to see if input matches any of the letters
     var $count = 0;
     var $notFound = true;
     for (var i = 0; i < $splitWord.length; i++) {
